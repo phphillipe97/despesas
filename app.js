@@ -205,15 +205,15 @@ function carregaListaDespesas(despesas = Array(), filtro = false) {
 
 		//Ajustar o tipo
 		switch(d.tipo){
-			case '1': d.tipo = 'Alimentação'
+			case '1': d.tipo = 'Supermercado'
 				break
-			case '2': d.tipo = 'Educação'
+			case '2': d.tipo = 'Contas Casa'
 				break
-			case '3': d.tipo = 'Lazer'
+			case '3': d.tipo = 'Combustível'
 				break
-			case '4': d.tipo = 'Saúde'
+			case '4': d.tipo = 'Gastos Lazer'
 				break
-			case '5': d.tipo = 'Transporte'
+			case '5': d.tipo = 'Imprevistos'
 				break
 			
 		}
@@ -254,11 +254,11 @@ function carregaListaDespesas(despesas = Array(), filtro = false) {
 	despesas.forEach(function(d) {
 		let tipoTexto = '';
 		switch(d.tipo){
-			case '1': tipoTexto = 'Alimentação'; break;
-			case '2': tipoTexto = 'Educação'; break;
-			case '3': tipoTexto = 'Lazer'; break;
-			case '4': tipoTexto = 'Saúde'; break;
-			case '5': tipoTexto = 'Transporte'; break;
+			case '1': tipoTexto = 'Supermercado'; break;
+			case '2': tipoTexto = 'Contas Casa'; break;
+			case '3': tipoTexto = 'Combustível'; break;
+			case '4': tipoTexto = 'Gastos Lazer'; break;
+			case '5': tipoTexto = 'Imprevistos'; break;
 			default: tipoTexto = 'Outro';
 		}
 
